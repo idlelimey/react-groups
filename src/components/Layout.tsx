@@ -69,14 +69,14 @@ const Layout: FunctionComponent<LayoutProps> = ({ onMount }) => {
 
     return (
         <div
-            className={`p-3 sm:p-8 absolute h-4/5 sm:h-full bottom-0 w-fit ${placement === 'left' ? 'left-0' : 'right-0'}`}
+            className={`p-3 sm:p-6 absolute h-4/5 sm:h-full bottom-0 w-fit ${placement === 'left' ? 'left-0' : 'right-0'}`}
         >
             <div
-                className={`bg-background rounded-2xl h-full w-full max-w-2xl shadow-2xl overflow-hidden`}
+                className={`bg-background rounded-2xl h-full w-full max-w-[650px] shadow-2xl overflow-hidden`}
                 ref={panel}
             >
                 <div className="grow flex flex-col overflow-hidden h-full">
-                    <div className="p-3 sm:p-6 grow-0">
+                    <div className="p-3 sm:p-6 sm:pb-3 grow-0">
                         <TopBar
                             cutoff={9}
                             mcode="MTEST"
