@@ -22,7 +22,7 @@ const Welcome: FunctionComponent<WelcomeProps> = ({ setShowWelcome }) => {
             className={`h-screen w-screen absolute top-0 z-20 bg-zinc-900 ${isShowing ? 'flex' : 'hidden'}`}
         >
             <div
-                className="hidden sm:block w-[33vw] min-w-2xs max-w-md bg-cover bg-center hidden lg:block"
+                className="hidden sm:block w-[33vw] min-w-2xs max-w-md bg-cover bg-center lg:block"
                 style={{
                     backgroundImage:
                         "url('https://svg.hotelmap.com/assets/svg/zeus/doodle/doodle_exhibition.svg')",
