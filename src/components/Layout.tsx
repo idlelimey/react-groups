@@ -22,10 +22,10 @@ import Preferences from './Layout/Preferences';
 
 const Gallery = lazy(() => import('../components/Layout/Gallery'));
 
-type LayoutProps = {
+export interface LayoutProps {
     onMount: () => void;
-};
-
+    showWelcome: boolean;
+}
 const Layout: FunctionComponent<LayoutProps> = ({ onMount }) => {
     // State
     const [highlight, setHighlight] = useAtom(assistHighlightAtom);
