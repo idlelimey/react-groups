@@ -38,6 +38,10 @@ export type HotelData = {
     sustainability?: {
         rating?: number;
     };
+    images?: {
+        primary?: string;
+        set?: string[];
+    };
 };
 
 export type AppData = {

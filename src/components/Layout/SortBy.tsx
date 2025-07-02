@@ -15,7 +15,7 @@ const SortBy: FunctionComponent = () => {
     const [sortPref, setSortPref] = useAtom(sortPrefAtom);
     return (
         <Select defaultValue={sortPref} onValueChange={setSortPref}>
-            <SelectTrigger className="w-full sm:w-max bg-background flex items-center justify-center sm:justify-start">
+            <SelectTrigger className="w-full sm:w-max !bg-background flex items-center justify-center sm:justify-start">
                 <div>
                     <SelectValue
                         placeholder="Sort by"

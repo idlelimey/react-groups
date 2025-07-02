@@ -22,7 +22,7 @@ const TripAdvisorScore: FunctionComponent<TripAdvisorScoreProps> = ({
             ref={taElement}
         >
             <img
-                src="/svg (2).svg"
+                src="/ta_logo.svg"
                 alt="TripAdvisor"
                 style={{ height: size + 'px' }}
                 className="mr-1 dark:invert"

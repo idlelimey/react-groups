@@ -149,7 +149,7 @@ body,
 
 .hm--ta-rating {
     --ta-color: #00aa6c;
-    --ta-size: 16px;
+    --ta-size: 13px;
 
     > span {
         width: var(--ta-size);

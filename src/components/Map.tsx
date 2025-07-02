@@ -94,8 +94,8 @@ const GroupMap: FunctionComponent<GroupMapProps> = ({ lat, lng }) => {
                 style={{ width: '100%', height: '100vh' }}
                 attributionControl={false}
                 reuseMaps={true}
-                minZoom={14}
-                maxZoom={14}
+                minZoom={13.3}
+                maxZoom={13.3}
             >
                 <Marker
                     latitude={lat}

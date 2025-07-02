@@ -82,7 +82,7 @@ const Preferences: FunctionComponent = () => {
                         </div>
                     </div>
 
-                    <div className="bg-muted rounded-lg p-1 sm:p-3 grid grid-cols-[1fr_auto_auto] gap-2 sm:gap-4 w-full col-span-2">
+                    <div className="bg-muted rounded-lg p-3 grid grid-cols-[1fr_auto_auto] gap-4 w-full col-span-2 items-center">
                         <div>
                             <SortBy />
                         </div>

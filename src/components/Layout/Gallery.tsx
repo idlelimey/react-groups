@@ -4,15 +4,12 @@ import { ArrowLeftIcon } from 'lucide-react';
 import { ScrollArea } from '../ui/scroll-area';
 import { useAtom, useAtomValue } from 'jotai';
 import { galleryAtom, sortedHotelsAtom } from '@/store/atoms';
-import { images } from '@/data/appData';
 
 const Gallery: FunctionComponent = () => {
     const hotels = useAtomValue(sortedHotelsAtom);
     const [gallery, setGallery] = useAtom(galleryAtom);
 
     if (gallery.hmid === 0) return;
-
-    const _images = images;
 
     const imageOnErrorHandler = (
         event: React.SyntheticEvent<HTMLImageElement, Event>,
@@ -59,26 +56,27 @@ const Gallery: FunctionComponent = () => {
                     <ScrollArea className="h-full">
                         <div className="grid grid-cols-1 gap-6 p-6 pt-0">
                             <img
-                                src="https://i.travelapi.com/lodging/1000000/70000/65800/65752/5f9c62b9_z.jpg"
+                                src={hotel.images?.primary}
                                 alt="Primary image"
                                 className="w-full rounded-xl"
                             />
 
                             <div className="columns-2 gap-6 w-full">
-                                {_images.map((url, i) => {
-                                    const className =
-                                        aspects[i % aspects.length];
-                                    return (
-                                        <img
-                                            key={url}
-                                            src={url}
-                                            alt={`Image ${i + 1}`}
-                                            onError={imageOnErrorHandler}
-                                            className={`object-cover w-full rounded-xl mb-6 ${className}`}
-                                            loading="lazy"
-                                        />
-                                    );
-                                })}
+                                {hotel.images &&
+                                    hotel.images.set?.map((url, i) => {
+                                        const className =
+                                            aspects[i % aspects.length];
+                                        return (
+                                            <img
+                                                key={url}
+                                                src={url}
+                                                alt={`Image ${i + 1}`}
+                                                onError={imageOnErrorHandler}
+                                                className={`object-cover w-full rounded-xl mb-6 ${className}`}
+                                                loading="lazy"
+                                            />
+                                        );
+                                    })}
                             </div>
                         </div>
                     </ScrollArea>
