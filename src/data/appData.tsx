@@ -17,22 +17,6 @@ export const eventData: EventData = {
     mcode: 'M0TIM',
 };
 
-// Images, temporary for testing
-export const images: string[] = [
-    'https://cruip-tutorials.vercel.app/masonry/masonry-01.jpg',
-    'https://cruip-tutorials.vercel.app/masonry/masonry-02.jpg',
-    'https://cruip-tutorials.vercel.app/masonry/masonry-03.jpg',
-    'https://cruip-tutorials.vercel.app/masonry/masonry-04.jpg',
-    'https://cruip-tutorials.vercel.app/masonry/masonry-05.jpg',
-    'https://cruip-tutorials.vercel.app/masonry/masonry-06.jpg',
-    'https://cruip-tutorials.vercel.app/masonry/masonry-07.jpg',
-    'https://cruip-tutorials.vercel.app/masonry/masonry-08.jpg',
-    'https://cruip-tutorials.vercel.app/masonry/masonry-09.jpg',
-    'https://cruip-tutorials.vercel.app/masonry/masonry-10.jpg',
-    'https://cruip-tutorials.vercel.app/masonry/masonry-11.jpg',
-    'https://cruip-tutorials.vercel.app/masonry/masonry-12.jpg',
-];
-
 // Data in here should be read only
 export const appData: AppData = {
     event: eventData,
