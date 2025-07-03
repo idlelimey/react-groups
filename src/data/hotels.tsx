@@ -17,7 +17,7 @@ export const hotelsData: HotelData[] = [
         },
         images: {
             primary:
-                '//d7ib5yv6am7l2.cloudfront.net/api/assets/download/img/16266beacbe8ff6f258865a0f93e00b0.jpg',
+                'https://d7ib5yv6am7l2.cloudfront.net/api/assets/download/img/16266beacbe8ff6f258865a0f93e00b0.jpg',
             set: [
                 'https://i.travelapi.com/lodging/1000000/800000/792600/792542/721777a8_z.jpg',
                 'https://i.travelapi.com/lodging/1000000/800000/792600/792542/1ec30bd5_z.jpg',
@@ -49,7 +49,7 @@ export const hotelsData: HotelData[] = [
         roomsRemaining: 20,
         images: {
             primary:
-                '//i.travelapi.com/lodging/1000000/70000/65800/65752/5f9c62b9_z.jpg',
+                'https://i.travelapi.com/lodging/1000000/70000/65800/65752/5f9c62b9_z.jpg',
             set: [
                 'https://i.travelapi.com/lodging/1000000/70000/65800/65752/d361db27_z.jpg',
                 'https://i.travelapi.com/lodging/1000000/70000/65800/65752/2c13d0a7_z.jpg',
@@ -83,7 +83,7 @@ export const hotelsData: HotelData[] = [
         roomsRemaining: 30,
         images: {
             primary:
-                '//d7ib5yv6am7l2.cloudfront.net/api/assets/download/img/0a63657ad7f2efbf6dfbd46354470c17.jpg',
+                'https://d7ib5yv6am7l2.cloudfront.net/api/assets/download/img/0a63657ad7f2efbf6dfbd46354470c17.jpg',
             set: [
                 'https://i.travelapi.com/lodging/45000000/44400000/44391800/44391709/7658c32f_z.jpg',
                 'https://i.travelapi.com/lodging/45000000/44400000/44391800/44391709/25464a0a_z.jpg',
@@ -120,7 +120,7 @@ export const hotelsData: HotelData[] = [
         roomsRemaining: 5,
         images: {
             primary:
-                '//d7ib5yv6am7l2.cloudfront.net/api/assets/download/img/a9dae403c5fca8f1650428c509a2c4d1.jpg',
+                'https://d7ib5yv6am7l2.cloudfront.net/api/assets/download/img/a9dae403c5fca8f1650428c509a2c4d1.jpg',
             set: [
                 'https://i.travelapi.com/lodging/1000000/20000/10900/10859/414b02f7_z.jpg',
                 'https://i.travelapi.com/lodging/1000000/20000/10900/10859/a48d3307_z.jpg',
@@ -162,7 +162,7 @@ export const hotelsData: HotelData[] = [
         },
         images: {
             primary:
-                '//d7ib5yv6am7l2.cloudfront.net/api/assets/download/img/c8806b35c2e93d6cfdfd21286962fdde.jpg',
+                'https://d7ib5yv6am7l2.cloudfront.net/api/assets/download/img/c8806b35c2e93d6cfdfd21286962fdde.jpg',
             set: [
                 'https://i.travelapi.com/lodging/1000000/180000/173400/173366/39d1d5bf_z.jpg',
                 'https://i.travelapi.com/lodging/1000000/180000/173400/173366/32f674d7_z.jpg',
@@ -200,7 +200,7 @@ export const hotelsData: HotelData[] = [
         roomsRemaining: 25,
         images: {
             primary:
-                '//i.travelapi.com/lodging/64000000/63310000/63306300/63306272/70f30bea_z.jpg',
+                'https://i.travelapi.com/lodging/64000000/63310000/63306300/63306272/70f30bea_z.jpg',
             set: [
                 'https://i.travelapi.com/lodging/13000000/12360000/12358400/12358399/fc472762_z.jpg',
                 'https://i.travelapi.com/lodging/13000000/12360000/12358400/12358399/979e8a3b_z.jpg',
@@ -239,7 +239,7 @@ export const hotelsData: HotelData[] = [
         sustainability: { rating: 4 },
         images: {
             primary:
-                '//d7ib5yv6am7l2.cloudfront.net/api/assets/download/img/e1ed7e50877089960a4d65f419475b19.jpg',
+                'https://d7ib5yv6am7l2.cloudfront.net/api/assets/download/img/e1ed7e50877089960a4d65f419475b19.jpg',
             set: [
                 'https://i.travelapi.com/lodging/64000000/63310000/63306300/63306272/a13b9388_z.jpg',
                 'https://i.travelapi.com/lodging/64000000/63310000/63306300/63306272/dfa3ec69_z.jpg',
@@ -277,7 +277,7 @@ export const hotelsData: HotelData[] = [
         roomsRemaining: 12,
         images: {
             primary:
-                '//d7ib5yv6am7l2.cloudfront.net/api/assets/download/img/4b55aff4083ab5a6b103f6560fb547b8.jpg',
+                'https://d7ib5yv6am7l2.cloudfront.net/api/assets/download/img/4b55aff4083ab5a6b103f6560fb547b8.jpg',
             set: [
                 'https://i.travelapi.com/lodging/1000000/30000/26500/26482/cd9e27f7_z.jpg',
                 'https://i.travelapi.com/lodging/1000000/30000/26500/26482/77d021dd_z.jpg',
@@ -309,13 +309,13 @@ export const hotelsData: HotelData[] = [
         price: { '1': 72, '2': 88 },
         peak: 105,
         lat: 51.8765,
-        lng: 0.7992,
+        lng: 0.8892,
         hmid: 1009,
         distance: 6.8,
         roomsRemaining: 15,
         images: {
             primary:
-                '//d7ib5yv6am7l2.cloudfront.net/api/assets/download/img/44386773a7f43efd190bc24701536d96.jpg',
+                'https://d7ib5yv6am7l2.cloudfront.net/api/assets/download/img/44386773a7f43efd190bc24701536d96.jpg',
             set: [
                 'https://i.travelapi.com/lodging/1000000/990000/988500/988482/08ab26b8_z.jpg',
                 'https://i.travelapi.com/lodging/1000000/990000/988500/988482/faa64fd6_z.jpg',
@@ -354,7 +354,7 @@ export const hotelsData: HotelData[] = [
         sustainability: { rating: 5 },
         images: {
             primary:
-                '//d7ib5yv6am7l2.cloudfront.net/api/assets/download/img/497bb3bd6d567ad5f64017697bb64b28.jpg',
+                'https://d7ib5yv6am7l2.cloudfront.net/api/assets/download/img/497bb3bd6d567ad5f64017697bb64b28.jpg',
             set: [
                 'https://i.travelapi.com/lodging/60000000/59850000/59845800/59845746/74100acc_z.jpg',
                 'https://i.travelapi.com/lodging/60000000/59850000/59845800/59845746/5badf1f0_z.jpg',
@@ -393,7 +393,7 @@ export const hotelsData: HotelData[] = [
         roomsRemaining: 18,
         images: {
             primary:
-                '//d7ib5yv6am7l2.cloudfront.net/api/assets/download/img/87c5fa8a9a54d9a7e4b15f9894b1f9ee.jpg',
+                'https://d7ib5yv6am7l2.cloudfront.net/api/assets/download/img/87c5fa8a9a54d9a7e4b15f9894b1f9ee.jpg',
             set: [
                 'https://i.travelapi.com/lodging/1000000/20000/17200/17117/f04675ae_z.jpg',
                 'https://i.travelapi.com/lodging/1000000/20000/17200/17117/af02d16e_z.jpg',
@@ -431,7 +431,7 @@ export const hotelsData: HotelData[] = [
         roomsRemaining: 9,
         images: {
             primary:
-                '//i.travelapi.com/lodging/1000000/30000/27700/27637/10133c49_z.jpg',
+                'https://i.travelapi.com/lodging/1000000/30000/27700/27637/10133c49_z.jpg',
             set: [
                 'https://i.travelapi.com/lodging/1000000/430000/428300/428239/37d632e8_z.jpg',
                 'https://i.travelapi.com/lodging/1000000/430000/428300/428239/2b4c0e27_z.jpg',
@@ -469,7 +469,7 @@ export const hotelsData: HotelData[] = [
         roomsRemaining: 13,
         images: {
             primary:
-                '//d7ib5yv6am7l2.cloudfront.net/api/assets/download/img/f6d3ee0ce3b31fb230bb666545e56446.jpg',
+                'https://d7ib5yv6am7l2.cloudfront.net/api/assets/download/img/f6d3ee0ce3b31fb230bb666545e56446.jpg',
             set: [
                 'https://i.travelapi.com/lodging/1000000/30000/27700/27637/36a92bea_z.jpg',
                 'https://i.travelapi.com/lodging/1000000/30000/27700/27637/db94e708_z.jpg',
