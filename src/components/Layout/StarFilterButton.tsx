@@ -28,7 +28,7 @@ const StarFilterButton: FunctionComponent<StarFilterButtonProps> = ({
             {Array.from({ length: stars }, (_, i) => (
                 <Star
                     key={i}
-                    className={`size-2.5 hover:fill-black ${starsFilter[stars] ? 'fill-black dark:fill-white' : 'fill-border stroke-border'}`}
+                    className={`size-2 hover:fill-black ${starsFilter[stars] ? 'fill-black dark:fill-white' : 'fill-border stroke-border'}`}
                 />
             ))}
         </Button>
