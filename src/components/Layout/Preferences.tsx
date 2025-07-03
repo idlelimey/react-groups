@@ -4,6 +4,7 @@ import {
     minRoomsAtom,
     rateAtom,
     roomsAtom,
+    showMapAtom,
     sortedHotelsAtom,
     starsFilterAtom,
 } from '@/store/atoms';
@@ -14,7 +15,7 @@ import SortBy from './SortBy';
 import StarFilterButton from './StarFilterButton';
 import { Popover, PopoverContent, PopoverTrigger } from '../ui/popover';
 import { Button } from '../ui/button';
-import { SlidersHorizontalIcon } from 'lucide-react';
+import { EyeIcon, EyeOffIcon, SlidersHorizontalIcon } from 'lucide-react';
 
 const Preferences: FunctionComponent = () => {
     const [userRate, setUserRate] = useAtom(rateAtom);
@@ -24,6 +25,7 @@ const Preferences: FunctionComponent = () => {
     const minRooms = useAtomValue(minRoomsAtom);
     const stars = useAtomValue(starsFilterAtom);
     const hotels = useAtomValue(sortedHotelsAtom);
+    const [showMap, setShowMap] = useAtom(showMapAtom);
 
     const [open, setOpen] = useState(false);
 
@@ -103,7 +105,7 @@ const Preferences: FunctionComponent = () => {
                 </div>
             </div>
             <div className="sm:hidden">
-                <div className="flex flex-cols">
+                <div className="flex flex-cols gap-2">
                     <div>
                         <Popover open={open} onOpenChange={setOpen}>
                             <PopoverTrigger asChild>
@@ -196,6 +198,16 @@ const Preferences: FunctionComponent = () => {
                                 </div>
                             </PopoverContent>
                         </Popover>
+                    </div>
+                    <div>
+                        <Button
+                            variant={'outline'}
+                            onClick={() => setShowMap(prev => !prev)}
+                            className="text-xs"
+                        >
+                            {showMap ? <EyeOffIcon /> : <EyeIcon />}{' '}
+                            {showMap ? 'Hide' : 'Show'} Map
+                        </Button>
                     </div>
                     <div className="grow text-right flex items-center justify-end">
                         <span>

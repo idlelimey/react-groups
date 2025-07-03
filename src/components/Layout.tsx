@@ -12,6 +12,7 @@ import {
     assistHighlightAtom,
     panelWidthAtom,
     placementAtom,
+    showMapAtom,
     sortedHotelsAtom,
 } from '@/store/atoms';
 import NoHotels from './Layout/NoHotels';
@@ -31,6 +32,7 @@ const Layout: FunctionComponent<LayoutProps> = ({ onMount }) => {
     const [highlight, setHighlight] = useAtom(assistHighlightAtom);
     const placement = useAtomValue(placementAtom);
     const hotels = useAtomValue(sortedHotelsAtom);
+    const showMap = useAtomValue(showMapAtom);
     const setPanelWidth = useSetAtom(panelWidthAtom);
 
     // Refs
@@ -69,10 +71,10 @@ const Layout: FunctionComponent<LayoutProps> = ({ onMount }) => {
 
     return (
         <div
-            className={`p-3 sm:p-6 absolute h-4/5 sm:h-full bottom-0 w-fit ${placement === 'left' ? 'left-0' : 'right-0'}`}
+            className={`absolute ${showMap ? 'h-3/4 p-3' : 'h-full p-0'} sm:p-6 sm:h-full bottom-0 w-fit ${placement === 'left' ? 'left-0' : 'right-0'} transition-all duration-300 ease-in-out`}
         >
             <div
-                className={`bg-background rounded-2xl h-full w-full max-w-[650px] shadow-2xl overflow-hidden`}
+                className={`bg-background ${showMap ? 'rounded-2xl' : 'rounded-none'} sm:rounded-2xl h-full w-full max-w-[650px] shadow-2xl overflow-hidden`}
                 ref={panel}
             >
                 <div className="grow flex flex-col overflow-hidden h-full">

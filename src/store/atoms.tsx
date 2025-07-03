@@ -43,6 +43,9 @@ export const assistHighlightAtom = atom<boolean>(false);
 type PlacementType = 'left' | 'right';
 export const placementAtom = atom<PlacementType>('left');
 
+// Mobile show/hide map
+export const showMapAtom = atom<boolean>(true);
+
 // Panel width
 type PanelWidthType = number;
 export const panelWidthAtom = atom<PanelWidthType>(0);
