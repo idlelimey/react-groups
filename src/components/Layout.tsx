@@ -107,7 +107,10 @@ const Layout: FunctionComponent<LayoutProps> = ({ onMount }) => {
                                         Contest Accommodation team
                                     </p>
                                     <div>
-                                        <Button variant={'hotelmap'}>
+                                        <Button
+                                            variant={'hotelmap'}
+                                            aria-label="Email"
+                                        >
                                             Email
                                         </Button>
                                     </div>

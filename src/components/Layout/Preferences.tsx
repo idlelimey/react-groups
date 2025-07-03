@@ -52,6 +52,7 @@ const Preferences: FunctionComponent = () => {
                                     step={1}
                                     className="w-full"
                                     onValueChange={handleRoomsChange}
+                                    name="rooms"
                                 />
                             </div>
                             <div className="grow-0">
@@ -73,6 +74,7 @@ const Preferences: FunctionComponent = () => {
                                     step={1}
                                     className="w-full"
                                     onValueChange={handleRateChange}
+                                    name="rate"
                                 />
                             </div>
                             <div className="grow-0 border bg-background rounded-md py-1 px-3 h-9 flex">

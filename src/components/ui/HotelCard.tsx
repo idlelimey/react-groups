@@ -40,6 +40,7 @@ const HotelCard: FunctionComponent<HotelData> = memo(({ ...props }) => {
                         onClick={() =>
                             setGallery({ active: true, hmid: props.hmid })
                         }
+                        aria-label="Image gallery"
                     >
                         <Images className="stroke-foreground" />
                     </Button>
@@ -129,7 +130,9 @@ const HotelCard: FunctionComponent<HotelData> = memo(({ ...props }) => {
                         </div>
                     </div>
                     <div>
-                        <Button variant="hotelmap">View</Button>
+                        <Button variant="hotelmap" aria-label="View Hotel">
+                            View
+                        </Button>
                     </div>
                 </div>
             </div>

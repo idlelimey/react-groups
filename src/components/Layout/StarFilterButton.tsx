@@ -24,6 +24,7 @@ const StarFilterButton: FunctionComponent<StarFilterButtonProps> = ({
             size="sm"
             className={`${starsFilter[stars] && 'border-black dark:border-white ring-1 ring-black dark:ring-white'} gap-0.5 !px-1.5`}
             onClick={handleClick}
+            aria-label={`Filter ${stars} hotels`}
         >
             {Array.from({ length: stars }, (_, i) => (
                 <Star

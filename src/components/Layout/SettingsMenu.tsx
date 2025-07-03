@@ -17,6 +17,7 @@ const SettingsMenu: FunctionComponent = () => {
                     variant="ghost"
                     size="icon"
                     className="data-[state=open]:text-primary"
+                    aria-label="Settings"
                 >
                     <EllipsisVertical />
                 </Button>

@@ -54,6 +54,7 @@ const LanguageSelect: FunctionComponent<LanguageSelectType> = ({ setOpen }) => {
                     aria-expanded={active}
                     className="w-full justify-start rounded-md"
                     onClick={() => setActive(true)}
+                    aria-label="Select language"
                 >
                     <div className="grow text-left">
                         {value

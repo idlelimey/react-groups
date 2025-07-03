@@ -21,7 +21,7 @@ const TopBar: FunctionComponent<TopBarProps> = ({
                 <span className="hidden sm:inline">our main </span>
                 <a
                     href={`https://hotelmap.com/${mcode}`}
-                    className="text-primary"
+                    className="text-primary font-bold"
                 >
                     HotelMap
                 </a>
@@ -29,7 +29,12 @@ const TopBar: FunctionComponent<TopBarProps> = ({
             </div>
 
             <div className="grow-0 self-center">
-                <Button variant="link" size="icon" onClick={assistClick}>
+                <Button
+                    variant="link"
+                    size="icon"
+                    onClick={assistClick}
+                    aria-label="Assistance"
+                >
                     <CircleQuestionMarkIcon />
                 </Button>
             </div>
