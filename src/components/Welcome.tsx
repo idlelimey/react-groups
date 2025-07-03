@@ -1,8 +1,8 @@
 import { useState, type FunctionComponent } from 'react';
 import { Button } from './ui/button';
-import HotelMapLogo from './ui/HotelMapLogo';
+import HotelMapLogo from './common/HotelMapLogo';
 import { appData } from '@/data/appData';
-import { getDateString } from '@/helpers';
+import { getDateString } from '@/lib/helpers';
 
 interface WelcomeProps {
     event_logo?: string;
