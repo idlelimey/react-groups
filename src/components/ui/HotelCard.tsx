@@ -6,13 +6,19 @@ import type { HotelData } from '@/data/types';
 import Discount from '../HotelCard/Discount';
 import Person from '../icons/Person';
 import { useSetAtom } from 'jotai';
-import { galleryAtom } from '@/store/atoms';
+import { galleryAtom, hoveredHotelAtom } from '@/store/atoms';
 import Stars from '../common/Stars';
 
 const HotelCard: FunctionComponent<HotelData> = memo(({ ...props }) => {
     const setGallery = useSetAtom(galleryAtom);
+    const setHovered = useSetAtom(hoveredHotelAtom);
+
     return (
-        <div className="bg-background rounded-lg shadow-xl border-background border-4 ring-background ring-2 dark:shadow-xl/60">
+        <div
+            className="bg-background rounded-lg shadow-xl border-background border-4 ring-background ring-2 dark:shadow-xl/60"
+            onMouseEnter={() => setHovered(props.hmid)}
+            onMouseLeave={() => setHovered(null)}
+        >
             <div
                 className="grid grid-cols-3 grid-rows-2 gap-0.5 sm:gap-[3px] hover:cursor-pointer"
                 onClick={() => setGallery({ active: true, hmid: props.hmid })}

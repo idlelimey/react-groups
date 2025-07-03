@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState, type FunctionComponent } from 'react';
-import Map, { Marker, type MapRef } from 'react-map-gl/mapbox';
+import Map, { type MapRef } from 'react-map-gl/mapbox';
 import { useAtomValue } from 'jotai';
 import { panelWidthAtom, placementAtom, sortedHotelsAtom } from '@/store/atoms';
 import HotelPin from './Map/HotelPin';
@@ -97,29 +97,24 @@ const GroupMap: FunctionComponent<GroupMapProps> = ({ lat, lng }) => {
                 minZoom={13.3}
                 maxZoom={13.3}
             >
-                <Marker
-                    latitude={lat}
-                    longitude={lng}
-                    anchor="bottom"
-                    style={{ position: 'absolute', top: 0 }}
-                >
-                    <VenuePin />
-                </Marker>
-                {hotels.map(hotel => (
-                    <Marker
-                        key={hotel.hmid}
-                        latitude={hotel.lat || 0}
-                        longitude={hotel.lng || 0}
-                        anchor="bottom"
-                        style={{ position: 'absolute', top: 0 }}
-                    >
+                <VenuePin lat={lat} lng={lng} />
+                {hotels
+                    .filter(
+                        hotel =>
+                            typeof hotel.lat === 'number' &&
+                            typeof hotel.lng === 'number',
+                    )
+                    .map(hotel => (
                         <HotelPin
+                            key={hotel.hmid}
                             stars={hotel.stars}
                             name={hotel.name}
                             price={hotel.price}
+                            hmid={hotel.hmid}
+                            lat={hotel.lat as number}
+                            lng={hotel.lng as number}
                         />
-                    </Marker>
-                ))}
+                    ))}
             </Map>
         </div>
     );

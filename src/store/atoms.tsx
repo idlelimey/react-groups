@@ -72,6 +72,9 @@ export const starsFilterAtom = atom<{ [key: number]: boolean }>(initStars);
 // Hotels
 const hotelsAtom = atom<HotelData[]>(appData.hotels);
 
+// Hovered hotel
+export const hoveredHotelAtom = atom<number | null>(null);
+
 // Rates
 export const maxRateAtom = atom(get => {
     const hotels = get(hotelsAtom);
